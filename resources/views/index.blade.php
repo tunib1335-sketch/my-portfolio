@@ -11,13 +11,21 @@
     <h1>Your Name</h1>
     <p>Web Developer | Designer | Programmer</p>
   </header>
-  <div class="profile-section">
-        <img src="{{ asset('images/me.jpg') }}" alt="My Photo" class="profile-img">
 
-        <p>Hello, I'm <strong>Your Name</strong>. I'm a passionate developer working on my skills.</p>
+@if(session('success'))
+    <p style="color:green;font-weight:bold">{{ session('success') }}</p>
+@endif
 
-        <a href="{{ asset('files/resume.pdf') }}" download class="download-btn">Download Resume</a>
-    </div>
+{{-- Show uploaded image --}}
+@if(session('image'))
+    <img src="{{ asset('storage/' . session('image')) }}" class="profile-img" alt="Profile">
+@endif
+
+<form action="{{ route('upload.profile') }}" method="POST" enctype="multipart/form-data">
+    @csrf
+    <input type="file" name="profile_image" required>
+    <button type="submit" class="upload-btn">Upload Profile Photo</button>
+</form>
 
   <nav>
     <a href="#about">About</a>
