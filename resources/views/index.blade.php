@@ -8,8 +8,8 @@
 </head>
 <body>
   <header>
-    <h1>Your Name</h1>
-    <p>Web Developer | Designer | Programmer</p>
+    <h1>Itti Samur Tunib</h1>
+    <p>Web Developer | Designer | Programmer | Researcher</p>
   </header>
 
 @if(session('success'))
@@ -36,7 +36,7 @@
 
   <section id="about" class="section">
     <h2>About Me</h2>
-    <p>Hello! I'm a passionate developer who enjoys building clean, responsive, and interactive web applications.</p>
+    <p>Hello! I'm a aspiring developer who enjoys building responsive, and interactive web applications.</p>
   </section>
 
   <section id="skills" class="section">
@@ -46,6 +46,7 @@
       <li>PHP, Laravel</li>
       <li>MySQL, Database Handling</li>
       <li>Git & GitHub</li>
+      <li>ML, DL</li>
     </ul>
   </section>
 
@@ -54,24 +55,24 @@
     <div class="projects">
       <div class="project-card">
         <h3>Project 1</h3>
-        <p>A simple description of your project.</p>
+        <p>Portfolio</p>
       </div>
       <div class="project-card">
         <h3>Project 2</h3>
-        <p>A simple description of your project.</p>
+        <p>E-Municipal</p>
       </div>
       <div class="project-card">
         <h3>Project 3</h3>
-        <p>A simple description of your project.</p>
+        <p>A study about hybrid learning frameworks</p>
       </div>
     </div>
   </section>
 
   <section id="contact" class="section">
     <h2>Contact</h2>
-    <p>Email: youremail@example.com</p>
+    <p>Email: ittisamurtunib20@gmail.com</p>
     <p>LinkedIn: your-link</p>
-    <p>GitHub: your-link</p>
+    <p>GitHub: https://github.com/tunib1335-sketch</p>
   </section>
 
   <footer>
