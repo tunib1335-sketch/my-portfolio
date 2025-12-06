@@ -1,5 +1,3 @@
-// Basic JS interaction
-
 document.addEventListener('DOMContentLoaded', () => {
   const contactForm = document.querySelector('#contactForm');
 
