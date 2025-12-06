@@ -19,3 +19,12 @@ document.getElementById("downloadPDF").addEventListener("click", () => {
     };
     html2pdf().from(element).set(options).save();
 });
+
+document.getElementById("downloadPage").addEventListener("click", () => {
+    const element = document.documentElement.outerHTML;
+    const blob = new Blob([element], { type: "text/html" });
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "MyPortfolio.html";
+    link.click();
+});

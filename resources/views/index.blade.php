@@ -81,7 +81,10 @@
 
   <button id="backToTop" onclick="scrollToTop()">↑</button>
 
-  <button id="downloadPDF" class="download-btn">Download as PDF</button>
+  <div class="download-section">
+    <button id="downloadPage" class="download-btn">Download HTML</button>
+    <button id="downloadPDF" class="download-btn">Download PDF</button>
+</div>
 
   <script src="{{ asset('js/script.js') }}"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
