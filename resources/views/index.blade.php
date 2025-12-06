@@ -11,6 +11,13 @@
     <h1>Your Name</h1>
     <p>Web Developer | Designer | Programmer</p>
   </header>
+  <div class="profile-section">
+        <img src="{{ asset('images/me.jpg') }}" alt="My Photo" class="profile-img">
+
+        <p>Hello, I'm <strong>Your Name</strong>. I'm a passionate developer working on my skills.</p>
+
+        <a href="{{ asset('files/resume.pdf') }}" download class="download-btn">Download Resume</a>
+    </div>
 
   <nav>
     <a href="#about">About</a>
