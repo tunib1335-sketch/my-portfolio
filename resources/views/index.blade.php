@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
 </head>
 <body>
   <header>
@@ -65,6 +65,6 @@
 
   <button id="backToTop" onclick="scrollToTop()">↑</button>
 
-  <script src="script.js"></script>
+  <script src="{{ asset('js/script.js') }}"></script>
 </body>
 </html>
